@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Enter Applicant Details</h2>
+
+<form action="/result" method="POST">
+
+<input type="number" name="Gender" placeholder="Gender (Male=1 Female=0)" required>
+
+<input type="number" name="Married" placeholder="Married (Yes=1 No=0)" required>
+
+<input type="number" name="Dependents" placeholder="Dependents" required>
+
+<input type="number" name="Education" placeholder="Graduate=0 Not Graduate=1" required>
+
+<input type="number" name="Self_Employed" placeholder="Self Employed (Yes=1 No=0)" required>
+
+<input type="number" name="ApplicantIncome" placeholder="Applicant Income" required>
+
+<input type="number" name="CoapplicantIncome" placeholder="Coapplicant Income" required>
+
+<input type="number" name="LoanAmount" placeholder="Loan Amount" required>
+
+<input type="number" name="Loan_Amount_Term" placeholder="Loan Amount Term" required>
+
+<input type="number" name="Credit_History" placeholder="Credit History (1/0)" required>
+
+<input type="number" name="Property_Area" placeholder="Property Area (Urban=2 Semiurban=1 Rural=0)" required>
+
+<br><br>
+
+<input type="submit" value="Predict Loan">
+
+</form>
+
+</div>
+
+</body>
+</html>
